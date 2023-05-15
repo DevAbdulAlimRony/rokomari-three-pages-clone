@@ -1,0 +1,567 @@
+
+body{overflow-x: hidden;}
+.details-container{
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.details-book-section{
+	height: 500px;
+	background: #FFFFFF;
+	padding: 30px;
+	margin-bottom:20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+    box-shadow: 0px 4px 6px -3px #9c9c9c;
+    border-radius: 3px;
+}
+.details-book-section .flex-container{
+	justify-content: space-around;
+}
+.details-book-main{
+	padding-bottom: 15px;
+}
+.main-img-wrap{
+	width: 312px;
+	border: 1px solid #cdcdcd;
+	padding: 41px 34px;
+	position: relative;
+    height: 400px;
+    padding: 41px 24px;
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+}
+.book-inside-wrapper{
+	margin-left: 10px;
+}
+.look-inside-img{
+	position: absolute;
+    background: url(https://www.rokomari.com/static/200/dist/desktop/images/lookInside.png) no-repeat;
+    top: 15px;
+    left: 115px;
+    height: 26px;
+    width: 150px;
+}
+.look-inside-bg{
+	position: absolute;
+    height: 320px;
+    width: 240px;
+    background-color: #868484;
+}
+.book-inside-wrapper img{
+	width: 240px;
+	height: 320px;
+	cursor: pointer;
+    position: absolute;
+    -webkit-transform-origin: 0 0 0;
+    transform-origin: 0 0 0;
+    -webkit-transition: -webkit-transform 0.5s ease 0s;
+    transition: -webkit-transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+.book-inside-wrapper img:hover{
+	webkit-transform: rotateY(-20deg);
+    transform: rotateY(-20deg);
+}
+.main-info-wrap{
+	margin-left: 45px;
+}
+.main-info_header h1{
+	font-size: 140%;
+	font-family: "SiyamRupali", sans-serif;
+    word-spacing: 3px;
+    font-weight: 300;
+    margin-bottom: 14px;
+}
+.main-info_header h1 span{
+	font-size: 85%;
+    color: #666666;
+}
+.book-info__content-author span{
+	font-size: 110%;
+    color: #666666;
+}
+.book-info__content-author a{
+	font-size: 105%;
+	color: #0397d3;
+}
+.content-category{
+	margin: 15px 0;
+    font-size: 100%;
+}
+.category span{
+	font-weight: 700;
+}
+.category a{
+	color: #0397d3;
+    font-size: 90%;
+	argin-left: 0.5rem
+}
+.content-rating{
+	font-size: 105%;
+	margin: 10px 0;
+	user-select: none;
+}
+.content-rating i{
+	color: #ff9900;
+    font-size: 110%;
+}
+.content-rating span{
+	margin-left: 5px;
+    margin-right: 5px;
+}
+.content-rating a:hover{
+	color: #0397d3;
+}
+.book-price{
+	font-size: 170%;
+	font-family: "Lato", sans-serif;
+    word-spacing: 3px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+.book-price .price__strike-through{
+	font-size: 90%;
+    color: #666666;
+	text-decoration: line-through;
+}
+.book-price .sell-price{
+	font-size: 90%;
+}
+.book-price .price-off{
+	color: #666666;
+    margin-left: 3px;
+    font-size: 60%;
+    word-spacing: 0;
+    font-weight: 400;
+}
+.content-offer{
+	margin-bottom: 15px;
+	margin-top: 0.5rem;
+}
+.content-offer img{}
+.content-offer p{
+	font-size: 13px;
+    color: #33c24d;
+    font-weight: 400;
+    margin-left: 0.5rem
+}
+.details-look-btn{
+	margin-right: 15px;
+	padding: 13.5px 35px;
+	font-size: 100%;
+	color: #33c24d !important;
+    border: 1px solid #33c24d;
+    font-size: 95%;
+    border-radius: 2px 2px 2px 2px !important;
+    box-shadow: 0px 3px 6px -4px #a2a2a2;
+    background-color: #FFFFFF;
+    font-family: "SiyamRupali", sans-serif;
+}
+.details-look-btn:hover{
+	color: #FFFFFF !important;
+    background-color: #33c24d;
+    box-shadow: none;
+    border-color: #29ffa9;
+}
+.details-cart-btn{
+	height: 50px;
+    width: 200px;
+    font-size: 135%;
+    color: #FFFFFF;
+    border-radius: 3px;
+    background-color: #ff9900;
+    box-shadow: 0px 3px 6px -4px #a2a2a2;
+    background-position: center;
+    -webkit-transition: background 0.8s;
+    transition: background 0.8s;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+}
+.details-cart-btn img{margin-right: 8px;}
+.details-cart-btn span
+{
+	display: inline-block;
+    vertical-align: middle;
+}
+.details-cart-btn:hover{
+	color: #FFFFFF;
+    background: #ffad33 -webkit-radial-gradient(circle, transparent 1%, #ff9900 1%) center/15000%;
+    background: #ffad33 radial-gradient(circle, transparent 1%, #ff9900 1%) center/15000%;
+}
+.share-info{
+	margin-top: 10px;
+	font-size: 125%;
+	color: #737373;
+}
+.share-info a{
+	font-size: 16px;
+}
+.share-info a:first-child{
+	margin-right: 35px;
+}
+.share-info a:hover{
+	color: #0397d3;
+}
+.share-info i{
+	font-size: 22px;
+    padding-top: 1px;
+	margin-right: 0.5rem;
+}
+.sidebar-info{
+	width: 300px;
+	margin: -30px -47px -55.1px 15px;
+    background-color: #f6f6f6;
+	padding: 1.5rem;
+}
+.payment-info{
+	margin-bottom: 22px;
+    padding-bottom: 15px;
+	border-bottom: 1px solid #dee2e6;
+}
+.payment-info div{
+	margin-top: 1rem;
+	display: flex;
+}
+.payment-info div img{
+	
+}
+.payment-info div p{
+	font-weight: 550;
+    color: #666666;
+	text-transform: capitalize;
+	margin-left: 1rem;
+}
+.payment-info .btn-link{
+	font-weight: 400;
+    color: #007bff3F;
+    background-color: transparent;
+	padding-left: 0;
+	padding-right: 0;
+}
+.payment-info .btn-link i{
+	font-size: 16px;
+}
+.sponsor-list{}
+.sponsor-list h5{
+	font-size: 130%;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+.sponsor-books{
+	margin-top: 15px;
+}
+.sponsor-book-img img{
+	width: 125px;
+}
+.sponsor-book-info{
+	margin-left: 15px;
+    width: 200px;
+	margin-top: 30px;
+}
+.product-name{
+	font-size: 100%;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 0;
+}
+.product-price{
+	font-size: 120%;
+    font-weight: 700;
+    margin-top: 3px;
+}
+.author-name{
+	font-size: 95%;
+    margin-top: 5px;
+}
+.sponsor-carousel{
+	display: flex;
+	justify-content: center;
+}
+.sponsor-carousel a{
+	color: #333;
+}
+.stock-available{
+	font-family: "SiyamRupali", sans-serif;
+    font-size: 100%;
+    word-spacing: -2px;
+	margin: 0 0 1rem;
+	display: inline-flex;
+}
+.stock-available img{
+	margin-right: 8px;
+    width: 18px;
+}
+.book-summary-section{
+	margin-top: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px -3px #9c9c9c;
+    border-radius: 3px;
+    padding: 30px;
+}
+.book-additional-info{
+	margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.book-additional-header h1{
+	font-size: 160%;
+	margin-bottom: 20px;
+}
+.details-book-info{
+	margin-top: 25px;
+}
+.details-book-info ul{
+	list-style-type: none;
+	justify-content: flex-start;
+	border-bottom: 1px solid #dee2e6;
+	flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.details-book-info ul li{
+	margin-bottom: -1px;
+}
+.details-book-info ul li a{
+	font-size: 115%;
+    word-spacing: 3px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+	display: block;
+    padding: 0.5rem 1rem;
+}
+.details-book-info ul li a.active{
+	box-shadow: inset 0 4px 0 0 #33c24d;
+	border-color: #dee2e6 #dee2e6 #fff;
+    color: #33c24d;
+}
+.details-book-info ul li a.inactive{
+	border-bottom: 1px solid #dee2e6;
+}
+.details-book-info ul li a.inactive:hover{
+	border: 1px solid transparent;
+	border-color: #e9ecef #e9ecef #dee2e6;
+	color: #0397d3;
+	outline: none;
+}
+.details-book-info_content table{
+	margin-top: 30px;
+    margin-bottom: 0;
+	border: 1px solid #dee2e6;
+	width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+}
+.details-book-info_content table tr td{
+	word-spacing: 4px;
+	border: 1px solid #dee2e6;
+	padding: 0.75rem;
+    vertical-align: top;
+}
+.details-book-info_content table tr td a{
+	color: #0397d3;
+}
+.details-book-info_content table td:first-child{
+	width: 15%;
+    background-color: #f1f2f4;
+}
+.report-link{
+	text-align: center;
+}
+.report-link p{
+	margin-top: 15px;
+   font-size: 110%;
+}
+.report-link p:hover a, .report-link p:hover i{
+	color: #0273a1;
+}
+.report-link p i{
+	font-size: 115%;
+    color: #D64541;
+    margin-right: 5px;
+}
+.report-link p a{
+	color: #d64541;
+    margin-top: -2px;
+}
+.book-summary-section .books-container, .book-review-rating{
+	box-shadow: none;
+	border-radius: 0;
+	border-bottom: 1px solid #f1f1f1;
+}
+.book-review-rating{
+	padding: 1.5rem;
+}
+.book-review-rating .flex-container{
+	justify-content: space-between;
+}
+.review-info h1{
+	font-size: 165%;
+	color: #333333;
+	margin-bottom: 0.5rem ;
+}
+.review-info h2{
+	padding-top: 0.5rem;
+}
+.rating-mark{
+	margin-left: 1.5rem ;
+}
+.rating-mark p{
+	font-size: 110%;
+	color: #6c757d;
+}
+.rating-mark span{
+	font-size: 130%;
+	margin-left: 0 ;
+} 
+.rating-mark span i{
+	color: #ff9900;
+	font-size: 80%;
+	margin-top: 4px;
+} 
+.write-review{
+	
+}
+.review-text-login{
+	text-align: center;
+   font-size: 130%;
+}
+.review-login-btn{
+	color: #0397d3;
+    border: 1px solid #0397d3;
+    font-size: 90%;
+	padding: 8px 32px;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0px 3px 6px -4px #a2a2a2;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+	margin-left: 1rem;
+}
+.review-login-btn:hover{
+	color: #FFFFFF;
+    background-color: #0397d3;
+    box-shadow: none;
+    border-color: #8bc4ea;
+}
+.review-login-btn:focus{
+	box-shadow: 0 0 0 0.2rem #66b5eb;
+}
+.review-comments{
+	justify-content: space-between;
+	border-bottom: 1px solid #f1f1f1;
+}
+.review-comments{
+	padding: 1.5rem;
+}
+.user-info{
+	flex-direction: column;
+	flex: 0 0 16.666667%;
+}
+.user-info img{
+	height: 80px;
+    width: 80px;
+	border-radius: 50%;
+}
+.review-username{
+	font-size: 115%;
+	margin-top: 5px;
+}
+.review-certified{
+	font-size: 100%;
+	margin-top: 5px;
+	color: #28a745;
+}
+.review-date{
+	font-size: 105%;
+	margin-top: 5px;
+    font-weight: 300;
+}
+.user-info i{
+	color: #ff9900;
+}
+.comment{
+	flex-basis: 83.333333%;
+}
+.user-review-wrapper{
+	position: relative;
+}
+.user-review-container--description{
+	font-size: 115%;
+	overflow: hidden;
+    word-spacing: 4px;
+    line-height: 140%;
+    word-wrap: break-word;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.help-review{
+	font-size: 105%;
+	margin-top: 10px;
+    color: #666666;
+}
+.help-review p span{
+	font-size: 120%;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.like-unlike{
+	margin-top: 15px;
+}
+.like-unlike a{
+	background-color: #f8f9fa;
+	border: 1px solid #cdcdcd;
+    padding: 6px 8px;
+    margin-right: 10px;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: inline-flex;
+    -webkit-align-self: center;
+    align-self: center;
+}
+.qa-container{
+	justify-content: space-between;
+	border-bottom: 1px solid #f1f1f1;
+	padding: 1.5rem;
+}
+.qa-title{
+	font-size: 165%;
+}
+.qa-subtitle{
+	color: #495057;
+    font-size: 110%;
+}
+.qa-list{
+	padding-top: 15px;
+    margin-top: 25px;
+}
+.qa-list p{
+	font-size: 110%;
+    color: #333333;
+}
+.bold{
+	font-weight: 700;
+	margin-left: 0;
+	margin-right: 0;
+}
+.question, .reply{
+	margin: 0;
+	margin-left: 0.5rem;
+}
+.ques-by, .ans-by{
+	font-size: 100%;
+    color: #b5b5b6;
+	margin-left: 2px;
+}
+.questionar{
+	font-weight: 700;
+}
+.answer{
+	margin-left: 22px;
+    padding-top: 5px;
+}

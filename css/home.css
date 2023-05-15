@@ -1,0 +1,860 @@
+.sub-menu__dropdown-menu .flex-container{
+	justify-content: space-between;
+}
+.sub-menu__dropdown-menu{
+	width: 100%;
+    background: #FFFFFF;
+    position: absolute;
+	left: 6%;
+    z-index: 2850;
+    padding: 15px;
+	padding-left: 25px;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 0;
+    transition: height 0.2s ease;
+	visibility: hidden;
+	opacity: 0;
+}
+.sub-menu__dropdown-menu{
+	align-self: flex-start;
+}
+.sub-menu__dropdown-menu li{
+	font-size: 100%;
+	list-style-type: disc;
+	margin-top: -10px;
+	text-align: left;
+}
+.sub-menu__dropdown-menu li a{
+	font-family: "SiyamRupali", sans-serif;
+}
+.sub-menu__dropdown-menu li a:hover{
+	color: #0397d3;
+}
+.dropdown-menu__see-more{
+	display: inline-block;
+    margin-top: 10px;
+    font-size: 110%;
+    color: #0397d3;
+}
+.writters:hover #writters-menu{
+	visibility: visible;
+	opacity: 1;
+}
+.publishers:hover #publishers-menu{
+	visibility: visible;
+	opacity: 1;
+}
+.subjects:hover #subjects-menu{
+	visibility: visible;
+	opacity: 1;
+}
+header{
+	background: #FFF;
+}
+.top-bar{
+	position: fixed;
+    width: 100%;
+    z-index: 3050;
+    background: #FFFFFF;
+    padding: 20px 0 20px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.top-bar .flex-container{
+	justify-content: space-between;
+}
+.top-bar .header-logo img{
+	width: 110px;
+}
+.top-bar .header-search{
+	flex-grow: 0.6;
+}
+.top-bar .header-search .search-input{
+	height: 46px;
+	padding: 5px;
+	margin-left: -4.5%;
+	font-size: 115%;
+	border-radius: 3px 0 0 3px;
+    border-bottom: 2px solid #ff9900;
+	-webkit-transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.top-bar .header-search .search-input:focus{
+	box-shadow: none;
+	 border-bottom: 1px solid #86b7fe;
+}
+.top-bar .input-append button{
+	background-color: #0397d3;
+    color: #ffffff;
+    width: 50px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+	border: none;
+	border-radius: 0 3px 3px 0;
+}
+.top-bar .input-append button:focus{
+	box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.header-end{
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	align-items: center;
+	-webkit-justify-content: flex-end;
+	-moz-box-pack: end;
+	justify-content: flex-end;
+}
+.cart{
+	margin-right: 15px;
+	position: relative;
+}
+.cart-quantity{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	vertical-align: middle;
+	background: #33c24d;
+	color: #FFF;
+	font-weight: bold;
+	border-radius: 50%;
+	position: absolute;
+	top: -10px;
+	right: -5px;
+}
+.dropdown-user{
+	position: relative;
+}
+.dropdown-user a{
+	color: #464646;
+    text-align: center;
+    width: 80px;
+    height: 38px;
+    padding-left: 5px;
+    padding-right: 5px;
+	border: 1px solid #6c757d;
+}
+.dropdown-user a:hover{
+	background-color: #33c24d;
+	color: #fff;
+	border: 1px solid #33c24d;
+}
+.dropdown-user a:focus{
+	 box-shadow: 0 0 0 0.25rem #33c24d78;
+}
+.menu-container{
+	padding-top: 70px;
+}
+.menu-wrapper{
+	position: relative;
+	margin-top: 37px;
+}
+.menu-container .menu-wrapper .flex-container{
+	justify-content: center;
+	list-style-type: none;
+}
+.main-menu{
+	margin-left: -80px;
+}
+.main-menu li{
+	margin: 2px 30px 0 0;
+	font-size: 122%;
+}
+.main-menu li a:hover{
+	color: #89C4F4;
+}
+.main-menu-active{
+	border: 1px solid #89C4F4;
+    border-bottom-color: #FFFFFF;
+    padding: 6px 15px;
+}
+.main-menu-active a{
+	color: #0397d3;
+}
+.gift-special .menu-icon{
+	width: 25px;
+    margin-top: -10px;
+}
+.sub-menu-wrapper{
+	border: 1px solid #89C4F4;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #cecfd1;
+    margin-top: -1px;
+}
+.sub-menu{
+	overflow: hidden;
+	list-style-type: none;
+    height: 3em;
+    text-align: center;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+.sub-menu li{
+	white-space: nowrap;
+    font-size: 100%;
+    margin-right: 15px;
+}
+.sub-menu li a{
+	display: inline-block;
+    padding: 12px 15px;
+}
+.sub-menu li a:hover{
+	color: #89C4F4FF;
+	transition: all 0s;
+}
+.main-menu li a.offer-menu:hover{
+	color: #FF9900 !important;
+}
+.sub-menu-highlight{
+	color: #E87E04;
+}
+.sub-menu-highlight-2{
+	color: #33c24d;
+}
+.sub-menu li.sub-menu-highlight a:hover, .sub-menu li.sub-menu-highlight-2 a:hover{
+	color: #000;
+}
+.sub-menu i{
+	margin-left: 5px;
+	font-size: 60%;
+	vertical-align: middle;
+}
+.sub-menu li a:hover .fa-chevron-down{
+	transform: rotate(180deg);
+}
+.floating-btn-right{
+	right:0%;
+	position: fixed;
+    top: 45%;
+	right: 1%;
+	margin-bottom: -20px;
+    border: 1px solid #e7e7e7;
+    background: -webkit-linear-gradient(#fdfdfd, #FFFFFF);
+    background: linear-gradient(#fdfdfd, #FFFFFF);
+    box-shadow: 0 0 3px 2px rgba(231, 231, 231, 0.75);
+    text-align: center;
+    padding: 22px 9px 10px 9px;
+    border-radius: 4px;
+    z-index: 3060;
+}
+.floating-btn-right .cart-count-img{
+	position: relative;
+}
+.floating-btn-right .cart-count-img .cart-icon{}
+.floating-btn-right .cart-count-img .cart-quantity{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	top: -28%;
+    right: -3%;
+	background-color: #D64541;
+	font-size: 11px;
+}
+.floating-btn-right .cart-amount{
+	font-size: 13px;
+    letter-spacing: -0.5px;
+    padding-top: 6px;
+    font-weight: 700;
+}
+.floating-btn-right .cart-amount:hover{
+	color: #0397d3;
+}
+.referral{
+	background-color: #FFFFFF;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+	margin-bottom: -20px;
+    padding: 10px 20px;
+    -webkit-transform: translateX(-50%) rotate(-90deg);
+    transform: translateX(-50%) rotate(-90deg);
+    z-index: 3050;
+    border-radius: 0 0 10px 10px;
+}
+.referral a span{
+	font-size: 16px;
+    margin: 0 5px;
+    font-weight: 700;
+}
+.referral a:hover{
+	color: #0397d3;
+}
+.navigation-area{
+	padding: 0 0 20px 0;
+}
+.navigation-area .small-banner{
+	justify-content: space-between;
+}
+.navigation-area .small-banner img{
+	widdth: 450px;
+	height: auto;
+}
+.books-container{
+	padding: 20px 0;
+	padding-bottom: 10px;
+	background-color: #FFFFFF;
+	font-size: 15px;
+	box-shadow: 0px 4px 6px -3px #9c9c9c;
+    border-radius: 3px;
+}
+#books #recently-sold{
+	width: 100%;
+	padding: 15px 0;
+    background-image: linear-gradient(rgba(252, 250, 238, 0.6), rgba(252, 250, 238, 0.6)), url(https://www.rokomari.com/static/200/dist/desktop/images/pattern_6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+	flex-wrap: wrap;
+    margin-left: 15px;
+}
+.title h1{
+	font-size: 160%;
+}
+.book-lists{
+	position: relative;
+	height: 100%;
+	padding-bottom: 50px;
+    -webkit-transition: height 0.3s linear;
+    transition: height 0.3s linear;
+}
+.btn-prev{
+	background: #FFFFFF;
+	border-radius: 0 4px 4px 0;
+    box-shadow: 2px 2px 12px -2px rgba(0, 0, 0, 0.3);
+    padding: 20px 12px;
+    position: absolute;
+    top: 50%;
+	left: 0;
+    margin-top: -40px;
+    z-index: 1;
+}
+.btn-next{
+	border-radius: 4px 0 0 4px;
+    box-shadow: -2px 2px 12px -2px rgba(0, 0, 0, 0.3);
+	position: absolute;
+    right: 0;
+	cursor: pointer;
+    color: #34495E;
+    border: none;
+    background: #FFFFFF;
+    padding: 20px 12px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    z-index: 1;
+}
+.btn-prev i, .btn-next i{
+	font-size: 200%;
+	line-height: 1;
+}
+.disabled{
+	color: #b9b9b9;
+    cursor: not-allowed;
+    border: 1px solid #f5f5f5;
+    box-shadow: none;
+}
+.book-lists .slide{
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-left: 14px;
+	margin-right: 14px;
+}
+.book-lists .slide .book-lists-wrapper{
+	padding: 20px 15px 5px;
+	padding-top: 0px;
+    position: relative;
+}
+.book-lists .slide .book-lists-wrapper .book-img{
+	-webkit-transform: scale(0.84);
+    transform: scale(0.84);
+    margin: 0 auto;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;position: relative;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+	position: relative;
+}
+.book-lists .slide .book-lists-wrapper .book-img img{
+	width: 130px;
+	height: 90%;
+	transition: 0.5s ease;
+}
+.best-selling-books .book-lists-wrapper .book-img img{
+	width: 150px;
+}
+.book-lists .slide .book-lists-wrapper .cart-btn-area{
+	position: absolute;
+	top: 75px;
+	text-align: center;
+    bottom: 0;
+	visibility: hidden;
+}
+.book-lists .slide .book-lists-wrapper .cart-btn-area .cart-btn{
+	height: 50px;
+    width: 130px;
+	font-size: 135%;
+	padding: 10px 12px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    background-color: #ff9900;
+	background-position: center;
+	border: 0;
+    box-shadow: 0px 3px 6px -4px #a2a2a2;
+    -webkit-transition: background 0.8s;
+	transition: background 0.8s;
+}
+.book-lists .slide .book-lists-wrapper .cart-btn-area .cart-btn:hover{
+	color: #FFFFFF;
+    background: #ffad33 -webkit-radial-gradient(circle, transparent 1%, #ff9900 1%) center/15000%;
+    background: #ffad33 radial-gradient(circle, transparent 1%, #ff9900 1%) center/15000%;
+}
+.book-text-area{
+	font-family: "kalpurush", sans-serif;
+    color: #111;
+	padding-top: 0;
+	padding-left: 10px;
+	width: 130px;
+	height: auto;
+}
+.book-lists-wrapper .book-text-area p {
+    text-align: center;
+    margin-bottom: 3px;
+}
+.book-lists-wrapper .book-text-area .book-title{
+	font-size: 120%;
+	font-weight: 400;
+}
+.book-lists-wrapper .book-text-area .book-price{
+	font-size: 110%;
+	font-weight: 700;
+    font-family: "Lato", sans-serif;
+}
+.book-details-btn{
+	display: inline-block;
+	height: auto;
+    width: 100%;
+	padding: 6px 12px;
+	font-weight: 700;
+    font-size: 135%;
+	word-spacing: 5px;
+    color: #FFFFFF;
+    border-radius: 0 0 3px 3px;
+    background-color: #0397d3;
+    box-shadow: 0px 3px 6px -4px #a2a2a2;
+    background-position: center;
+    -webkit-transition: background 0.8s;
+    transition: background 0.8s;
+	position: absolute;
+    left: 0;
+    top: 100%;
+	display: none;
+}
+.book-details-btn:hover{
+	color: #FFFFFF;
+    background: #37aaf7 -webkit-radial-gradient(circle, transparent 1%, #0397d3 1%) center/15000%;
+    background: #37aaf7 radial-gradient(circle, transparent 1%, #0397d3 1%) center/15000%;
+}
+.book-lists-wrapper:hover {
+    box-shadow: inset 0px 0px 7px 0px #cdcdcd;
+}
+.book-lists-wrapper:hover .book-img img, .book-lists-wrapper:hover .book-text-area{
+      opacity: 0.2; 
+}
+
+.book-lists-wrapper:hover .cart-btn{
+	z-index: 500;
+	visibility: visible;
+}
+.book-lists-wrapper:hover .book-details-btn{
+	display: block;
+}
+.book-lists-wrapper{
+	padding: 35px 30px 20px;
+}
+
+.book-author{
+	font-size: 110%;
+	color: #666666;
+}
+.book-status{
+	font-size: 100%;
+    color: #33c24d;
+	text-transform: capitalize;
+}
+.user-selection{
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.user-selection_header{
+	margin-bottom: 8px;
+    padding-left: 20px;
+}
+.user-selection_header h1{
+	color: #333333;
+    display: inline;
+	font-size: 150%;
+}
+.user-selection_header span{
+	font-size: 100%;
+    color: #aaa;
+    padding-left: 10px;
+}
+.user-selection_content{
+	position: relative;
+	padding-bottom: 20px;
+}
+.user-selection_content .selection-lists{
+	justify-content: space-around;
+	margin-top: 20px;
+}
+.user-selection_content .selection-lists .selection-item{
+	width: 159px;
+	height: 135px;
+	text-align: center;
+	background-image: url(../imgs/custom-category.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 5px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.selection-item_checked{
+	display: none;
+}
+.selection-item_checked-active{
+	display: block;
+}
+.selection-item_checked{
+	background-color: #44b44ca1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+/*.selection-item input[type="checkbox"]{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.selection-item input[type="checkbox"]:checked  .tata{
+	border: 1px solid green;
+}*/
+.selection-item_checked img{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto;
+}
+.btn-category{
+	width: 240px;
+	height: 60px;
+    font-size: 114.286%;
+	text-align: center;
+    color: #333333;
+    border: 1px solid #71cbf0;
+    border-radius: 6px;
+    line-height: 3;
+    background: -webkit-linear-gradient(right, #e3f3fa 50%, #0397d3 50%);
+    background: linear-gradient(to left, #e3f3fa 50%, #0397d3 50%);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.all-category{
+	color: #0397d3;
+}
+.all-category i{
+	margin-left: 0.5rem;
+}
+.top-category-lists .flex-container{
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.top-category-lists .flex-container:first-child{
+	margin-bottom: 20px;
+}
+.top-category-lists .btn-category:hover{
+	color: #FFFFFF;
+    background-position: left bottom;
+}
+.must-read{
+	padding: 20px;
+}
+.must-read .flex-container{
+	justify-content: space-between;
+}
+.must-read-title{
+	font-size: 160%;
+	color: #333333;
+    margin-bottom: 15px;
+}
+.must-read-img{
+	height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+.must-read-img svg{
+	fill: #AFC1E0;
+}
+.must-read-wrapper:hover .must-read-img svg{
+	fill: #0397d3;
+}
+.must-read-wrapper:hover .must-read-text{
+	color: #0397d3;
+} 
+.must-read-text p{
+	margin-top: 20px;
+    font-size: 110%;
+    text-align: center;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+.secondary-banner img{
+	width: 102%;
+	border-radius: 0.25rem;
+}
+.author-lists{
+	padding: 20px;
+	position: relative;
+}
+.title-with-button{
+	justify-content: space-between;
+}
+.author-title .author-list_title{
+	font-size: 160%;
+	color: #333333;
+}
+.list-btn{
+	font-size: 100%;
+	background-color: transparent;
+	color: #0397d3;
+    border: 1px solid #0397d3;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0px 3px 6px -4px #a2a2a2;
+    padding: 6px 12px;
+	margin-right: 10px;
+}
+.list-btn:hover{
+	color: #FFFFFF;
+    background-color: #0397d3;
+    box-shadow: none;
+    border-color: #8bc4ea;
+}
+.author-container .flex-container{
+	justify-content: space-around;
+}
+.author-list-wrapper{
+	width: 185px;
+	margin: 20px 15px 5px;
+    position: relative;
+}
+.author-list-wrapper a img{
+	display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 2px solid #CDCDCD;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+}
+.author-list-wrapper .author-text{
+	margin-top: 20px;
+    text-align: center;
+}
+.author-list-wrapper a:hover .author-img{
+	border: 2px solid #0397d3;
+} 
+.author-list-wrapper a:hover .author-text{
+	color: #0397d3;
+}
+/*Slider Starts Here*/
+.main-slider{
+	margin-bottom: 20px;
+}
+.slider-wrapper{
+	width: 100%;
+	height: 280px;
+	position: relative;
+	overflow: hidden;
+}
+.image-holder{
+	display: grid;
+	grid-template-columns: repeat(4, 100%);
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	animation: slide 15s ease infinite;
+}
+.main-slider #img1{
+	background-color: #1f1f1f11;
+	background: url('https://ds.rokomari.store/rokomari110/banner/cbac5193-df6b-49f4-a7cb-ba028e9df0c2.png');
+	background-size: cover;
+}
+.main-slider #img2{
+	background-color: #2f2f2f22;
+	background: url('https://ds.rokomari.store/rokomari110/banner/c0130cc1-a3dc-4ec8-9ca1-30df2aac23f6.png');
+	background-size: cover;
+}
+.main-slider #img3{
+	background-color: #3f3f3f33;
+	background: url('https://ds.rokomari.store/rokomari110/banner/cc2c4e87-03e1-41cd-9fab-0e551da59ab3.jpg');
+	background-size: cover;
+}
+.main-slider #img4{
+	background-color: #3f3f3f33;
+	background: url('https://ds.rokomari.store/rokomari110/banner/34ee81b0-16aa-473a-bd58-5b044b10112b.jpg');
+	background-size: cover;
+}
+.main-slider .carousel-holder{
+	position: absolute;
+	bottom: 0%;
+	left: 45%;
+}
+.main-slider .carousel{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 3rem;
+	background: #CCC;
+	margin: 0.4rem 0.3rem;
+}
+@keyframes slide{
+	0% {transform: translateX(0%)}
+	10% {transform: translateX(-100%)}
+	20% {transform: translateX(-100%)}
+	30% {transform: translateX(-100%)}
+	40% {transform: translateX(-200%)}
+	50% {transform: translateX(-200%)}
+	60% {transform: translateX(-200%)}
+	70% {transform: translateX(0%)}
+	80% {transform: translateX(0%)}
+	90% {transform: translateX(0%)}
+	100% {transform: translateX(0%)}
+}
+
+/*Book Badges*/
+.original-price{
+	text-decoration: line-through;
+	font-size: 112%;
+    margin-right: 5px;
+    color: #666666;
+	padding-left: 0.5rem;
+}
+.look-inside-badge{
+	position: absolute;
+    bottom: 0;
+    left: 45px;
+    height: 68px;
+    width: 85px;
+    background: url('https://www.rokomari.com/static/200/dist/desktop/images/look-inside.png') no-repeat;
+}
+.discount-badge{
+	position: absolute;
+    top: 0;
+    left: -23px;
+    height: 42px;
+    width: 46px;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+}
+.badge-purple{
+	background: url('https://www.rokomari.com/static/200/dist/desktop/images/discount-badge-two.png') no-repeat;
+    color: #ffffff;
+}
+.badge-yellow{
+	background: url('https://www.rokomari.com/static/200/dist/desktop/images/discount-badge-one.png') no-repeat;
+   color: #000000;
+}
+.badge-red{
+	background: url('https://www.rokomari.com/static/200/dist/desktop/images/discount-badge-three.png') no-repeat;
+    color: #ffffff;
+}
+.out-of-stock-badge{
+	height: 186px;
+    width: 130px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    background: url('https://www.rokomari.com/static/200/dist/desktop/images/out-of-stock-badge.png') no-repeat;
+    background-size: auto;
+    background-size: 100%;
+}
+.discount-badge p{
+	margin-left: 8px;
+    margin-top: 2px;
+   font-size: 128%;
+   font-weight: 600;
+}
+.book-lists-wrapper:hover .book-img .discount-badge, .book-lists-wrapper:hover .book-img .pre-order-badge, .book-lists-wrapper:hover .book-img .serial-badge {
+    opacity: 0.2;
+}
+.pre-order-badge{
+	position: absolute;
+    top: 75px;
+    left: -1px;
+    background: url('https://www.rokomari.com/static/200/dist/desktop/images/pre-order-badge.png') no-repeat;
+    height: 35px;
+    width: 130px;
+    background-size: 100%;
+}
+.back-order-badge{
+	background: url('https://www.rokomari.com/static/200/dist/desktop/images/back_order.png') no-repeat;
+}
+
+/*Must Read Hovering*/
+.must-read-wrapper:hover .must-read__img-hover-element--first {
+    fill: #FFD97C;
+}
+.must-read-wrapper:hover .must-read__img-hover-element--third {
+    fill: #FCC95D;
+}
+.serial-badge{
+	position: absolute;
+    top: -5px;
+    left: 28%;
+    height: 29px;
+    width: 60px;
+    background: url('https://www.rokomari.com/static/200/dist/desktop/images/serial-badge-2.png') no-repeat;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+}
+.serial-badge p{
+	text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 140%;
+    margin-top: -2px;
+}
+.best-selling-books{
+	background-image: -webkit-linear-gradient(rgba(245, 245, 245, 0.4), rgba(245, 245, 245, 0.4)), url('https://www.rokomari.com/static/200/dist/desktop/images/pattern_6.png');
+    background-image: linear-gradient(rgba(245, 245, 245, 0.4), rgba(245, 245, 245, 0.4)), url('https://www.rokomari.com/static/200/dist/desktop/images/pattern_6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-color: #FFFFFF;
+}
